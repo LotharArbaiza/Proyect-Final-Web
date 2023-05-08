@@ -1,0 +1,325 @@
+/*ENCABEZADO*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/* Estilo general del encabezado */
+header {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    background-size: cover;
+    display: -webkit-box; /* para Safari 3.1 - 6.0 */
+    display: -moz-box; /* para Firefox 2-27 */
+    display: -ms-flexbox; /* para IE 10 */
+    display: -webkit-flex; /* para Safari 6.1+ y Chrome 21+ */
+    display: flex;
+    -webkit-box-pack: justify; /* para Safari 3.1 - 6.0 */
+    -moz-box-pack: justify; /* para Firefox 2-27 */
+    -ms-flex-pack: justify; /* para IE 10 */
+    -webkit-justify-content: space-between; /* para Safari 6.1+ y Chrome 21+ */
+    justify-content: space-between;
+    -webkit-box-align: center; /* para Safari 3.1 - 6.0 */
+    -moz-box-align: center; /* para Firefox 2-27 */
+    -ms-flex-align: center; /* para IE 10 */
+    -webkit-align-items: center; /* para Safari 6.1+ y Chrome 21+ */
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #282c34; /* aqui cambio el color del fondo a mas oscuro */
+}
+
+/* Estilo del logo */
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.logo img {
+  width: 100px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+/* Estilos del menú de navegación */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 1;
+}
+
+nav ul ul li {
+  width: 200px;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+nav ul ul li:hover {
+  background-color: #f5f5f5;
+}
+
+nav ul ul a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav ul a {
+  color: #b6acac;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+}
+
+nav ul a:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+/* Estilos del subíndice */
+nav ul ul li a {
+  display: block;
+  padding: 8px 20px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul ul li a:hover {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+nav ul ul li a:focus {
+  outline: none;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+nav ul ul li a.active {
+  background-color: #333;
+  color: #fff;
+}
+/* Estilo del campo de búsqueda */
+.search {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+/* Estilo del input de búsqueda */
+.search input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Estilo del botón de búsqueda */
+.search button {
+  background-color: #00b894;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Estilo del botón de búsqueda al pasar el cursor sobre él */
+.search button:hover {
+  background-color: #00a383;
+}
+/*----------------------------------------------------------------------------*/
+
+
+/*PROMOCION*/
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+html{
+  font-family: Arial, Helvetica, sans-serif;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.contenedor{
+  width: 100%;
+  position: relative;
+  height: 780px;
+}
+.botones{
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .7);
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, .6);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.botones:hover{
+  cursor: pointer;
+  transform: scale(1.2,1.2);
+}
+.atras{
+  left: 2%;
+  top: calc(50% -70%);
+}
+.adelante{
+  right: 2%;
+  top: calc(50% - 70%);
+}
+
+
+/*JHONNY*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pie{
+    background: #cdcecf;
+}
+img{
+    width: 40px;
+}
+.logito{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+span{
+    font-size: 23px;
+}
+.Fb{
+    background: rgba(0, 81, 255);
+    padding: 8px ;
+    border-radius: 50px;
+    color: white;
+}
+.TW{
+    background: rgba(0, 81, 255);
+    padding: 8px ;
+    border-radius: 50px;
+    color: white;
+}
+.In{
+    background: rgb(255, 0, 179);
+    padding: 8px ;
+    border-radius: 50px;
+    color: white;
+}
+.Li{
+    background: rgb(0, 102, 255);
+    padding: 8px ;
+    border-radius: 50px;
+    color: white;
+}
+.Yt{
+    background: rgb(255, 0, 0);
+    padding: 8px ;
+    border-radius: 50px;
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.logotipo{
+    font-size: 18;
+    color: white;
+}
+ .section{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+ }   
+.section div{
+    display: flex;
+    flex-direction: column;
+}
+div h2{
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+}
+a{
+  color: rgba(255, 255,255, 0.527);
+  text-decoration: none;
+  padding: 7px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    background: none;
+    border: solid 2px white;
+    padding: 10px 20px;
+}
+button{
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    font-size: 18px;
+}
+.derechos {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.derechos p{
+  margin: 0;
+}
